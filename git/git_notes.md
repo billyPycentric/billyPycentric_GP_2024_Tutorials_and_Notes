@@ -64,4 +64,19 @@ There will be some files/directories that you would want to track
 This is where the **".gitignore"** file comes in , you just put all the files/directories you do not want to be tracked  
 How do you do it:  
 1. Create a file named **".gitgnore "** 
-2. add directory(s)/files   
+2. add directory(s)/files  
+## Branch , Merge and Configs  
+With branching you are deviating from the timeline , making isolated changes from/to code without affecting the actual Code  
+### Branch Commands  
+1. Check Available Branch(s)  
+~~~
+git branch
+~~~   
+2. Create a New Branch  
+~~~
+git branch "yourBranchName"  
+~~~  
+3. Switch Branch(s)  
+~~~
+git branch checkout "desiredBranch"
+~~~  
