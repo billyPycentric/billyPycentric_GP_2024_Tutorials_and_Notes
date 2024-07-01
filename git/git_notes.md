@@ -145,7 +145,22 @@ git remote add "name" "url" , name is branchName and url is your .git repo url
 3. Pushing a local Repo   
 ~~~
 git push -u origin main , -u -> setting an upstream
-~~~ 
+~~~   
+## Wrapping it up   
+> useful git commands   
+
+  
+| Name Of Command | Git command   |
+| -----           | ------- |
+| Git Clone       | git clone https://github.com/billyPycentric/billyPycentric_GP_2024_Tutorials_and_Notes.git      |
+|  Branching      | git branch ,  git checkout |
+| Status          | git status     |
+| stage and commit             | git commit -am "msg" |
+| Pushing and Pulling | git push -u origin , git pull/fetch |
+
+
+
+
 
    
 
