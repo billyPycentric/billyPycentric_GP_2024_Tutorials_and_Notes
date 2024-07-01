@@ -92,12 +92,14 @@ You need to go back to the master/Main branch first, and write the command:
 git merge "branchName"
 ~~~
  
-2. Not Fast-forward merge -> all the branch(s) are changing simultaniously  
+2. Not Fast-forward merge -> all the branch(s) are changing simultaniously   
+You need to go back to the master/Main branch first , and write the command:   
+~~~
+git merge "branchName"
+~~~
+There are goinf to be conflicts , the easiest way is to resolve using editor, then thats it 
 #### Deleting Branch  
 ~~~
 git branch -d "branchName"
 ~~~  
-I  just Deleted a branch!!
-Create conflicts using main branch
-Creating a merge conflict from conflic_merge
 
