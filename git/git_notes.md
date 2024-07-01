@@ -54,8 +54,8 @@ Logs structure is usually:
 * Author -> who wrote the code
 * commit -> commit Id  
 * commit message -> commit message  
-2. Summary of Log 
-![git log]() 
+2. Summary of Log  
+ ![git log]() 
 ~~~
 git log --oneline
 ~~~
