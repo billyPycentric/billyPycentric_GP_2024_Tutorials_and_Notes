@@ -102,4 +102,16 @@ There are goinf to be conflicts , the easiest way is to resolve using editor, th
 ~~~
 git branch -d "branchName" 
 ~~~  
-I want to check something out
+## Stash and Diff 
+Compares the changes/differences of a file from 2 separate timelines
+* Can use either the branch names -> brach1  branch 2
+* or commit Ids  
+### Stash  
+Stash temporarily stashes the changes you have made, so that you can later commit or continue working on them , this is how you can use stash commands:    
+~~~
+git stash && git stash pop
+~~~
+**NB** : *Stash is a dangerous command in the way that , you can still use or see the stashed changes even when you are in a diff branch:* But you can avoid faults by using these  commands:   
+   
+
+
