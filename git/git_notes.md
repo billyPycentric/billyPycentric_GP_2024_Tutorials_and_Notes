@@ -98,4 +98,5 @@ git merge "branchName"
 git branch -d "branchName"
 ~~~  
 I  just Deleted a branch!!
+Creating a merge conflict from conflic_merge
 
