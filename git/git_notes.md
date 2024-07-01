@@ -42,4 +42,20 @@ Simple Version:
 Full Version:  
 ```
     Working Dir-->git add-->Staging Area-->git commit-->Repo-->git push-->github
-``` 
+```  
+## Git Commits and Logs  
+Logs helps with with project history , displays snapshots of a commits:  
+1. Listing all logs  
+~~~
+git log
+~~~
+![Git logs](https://drive.google.com/drive/folders/1FiM_fX5k81ntiPhRHeckOI1uIBIHOYl9)  
+Logs structure is usually:
+* Author -> who wrote the code
+* commit -> commit Id  
+* commit message -> commit message  
+2. Summary of Log 
+![git log]() 
+~~~
+git log --oneline
+~~~
