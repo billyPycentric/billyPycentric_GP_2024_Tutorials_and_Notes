@@ -156,7 +156,8 @@ git push -u origin main , -u -> setting an upstream
 |  Branching      | git branch ,  git checkout |
 | Status          | git status     |
 | stage and commit             | git commit -am "msg" |
-| Pushing and Pulling | git push -u origin , git pull/fetch |
+| Pushing and Pulling | git push -u origin , git pull/fetch |   
+Just added a code
 
 
 
