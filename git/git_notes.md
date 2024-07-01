@@ -112,6 +112,15 @@ Stash temporarily stashes the changes you have made, so that you can later commi
 git stash && git stash pop
 ~~~
 **NB** : *Stash is a dangerous command in the way that , you can still use or see the stashed changes even when you are in a diff branch:* But you can avoid faults by using these  commands:   
+#### Use Stash with List:  
+Before you run :   
+~~~
+git stash -> run git stash list , then run git stash  
+~~~   
+Then when you want to import the stash will will just run :   
+~~~
+git stash apply stash@{n} , where n is the stash no you want to run
+~~~    
    
 
 
