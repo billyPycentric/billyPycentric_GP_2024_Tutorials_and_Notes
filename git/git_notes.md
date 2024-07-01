@@ -120,7 +120,14 @@ git stash -> run git stash list , then run git stash
 Then when you want to import the stash will will just run :   
 ~~~
 git stash apply stash@{n} , where n is the stash no you want to run
-~~~    
+~~~   
+#### More Commands
+~~~
+git checkout <Hash> , where has is the commit id , going back in time
+and
+git reflog , to return where you were // git checkout master/main
+~~~
+
    
 
 
