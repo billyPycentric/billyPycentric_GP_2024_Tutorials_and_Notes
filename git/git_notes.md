@@ -93,4 +93,8 @@ git merge "branchName"
 ~~~
  
 2. Not Fast-forward merge -> all the branch(s) are changing simultaniously  
+#### Deleting Branch  
+~~~
+git branch -d "branchName"
+~~~
 
