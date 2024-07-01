@@ -80,3 +80,7 @@ git branch "yourBranchName"
 ~~~
 git branch checkout "desiredBranch"
 ~~~  
+4. Create new Branch and Move to that branch  
+~~~
+git checkout -b "newBranchName"
+~~~  
