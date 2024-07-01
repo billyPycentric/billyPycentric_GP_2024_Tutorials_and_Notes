@@ -58,4 +58,10 @@ Logs structure is usually:
  ![git log]() 
 ~~~
 git log --oneline
-~~~
+~~~  
+## Git Configuaration  
+There will be some files/directories that you would want to track  
+This is where the **".gitignore"** file comes in , you just put all the files/directories you do not want to be tracked  
+How do you do it:  
+1. Create a file named **".gitgnore "** 
+2. add directory(s)/files   
