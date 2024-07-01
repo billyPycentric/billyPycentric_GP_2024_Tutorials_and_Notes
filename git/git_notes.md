@@ -100,6 +100,6 @@ git merge "branchName"
 There are goinf to be conflicts , the easiest way is to resolve using editor, then thats it 
 #### Deleting Branch  
 ~~~
-git branch -d "branchName"
+git branch -d "branchName" 
 ~~~  
-
+I want to check something out
