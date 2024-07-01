@@ -96,5 +96,6 @@ git merge "branchName"
 #### Deleting Branch  
 ~~~
 git branch -d "branchName"
-~~~
+~~~  
+I  just Deleted a branch!!
 
