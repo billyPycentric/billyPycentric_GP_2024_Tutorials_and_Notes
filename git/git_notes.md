@@ -126,7 +126,26 @@ git stash apply stash@{n} , where n is the stash no you want to run
 git checkout <Hash> , where has is the commit id , going back in time
 and
 git reflog , to return where you were // git checkout master/main
+~~~   
+## Remote and Push Commands  
+The command :   
 ~~~
+git remote
+~~~   
+lets you ***view , create and delete*** connections to other Repos   
+Here are some useful commands:   
+1. Checking if you have any remote Repos on the local system :    
+~~~
+git remote -v , -verbose
+~~~   
+2. Connect to a remote Repo   
+~~~
+git remote add "name" "url" , name is branchName and url is your .git repo url
+~~~  
+3. Pushing a local Repo   
+~~~
+git push -u origin main , -u -> setting an upstream
+~~~ 
 
    
 
