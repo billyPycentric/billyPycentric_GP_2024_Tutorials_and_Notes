@@ -84,3 +84,9 @@ git branch checkout "desiredBranch"
 ~~~
 git checkout -b "newBranchName"
 ~~~  
+### Merging Branch(s)  
+1. Fast-forward merge -> the Main/master is the only branchh that is not working/no changes  
+#### Merging  
+You need to go back to the master/Main branch first
+ 
+2. Not Fast-forward merge -> all the branch(s) are changing simultaniously  
