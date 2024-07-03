@@ -60,4 +60,46 @@ def test_divide():
 
 
 
+~~~   
+There are different ways in which we can perform tests   
+### We can have ***Function*** or  ***Class*** based test   
+1. **Function** based : 
+~~~
+
+~~~  
+2. **Class** based :  
+going to need :   
+* Super Class
+* Sub Class
+* Test Class 
+~~~python
+# super class , using shapes in this example
+class Shape:
+    def area(self):
+        pass
+    def perimeter(self):
+        pass
+# sub class , wich will extend the super class
+class NameOfShape(Shape):
+    # def the __init__ func -> acts as a constructor
+    def ___init__(self , field_for_shape1 ,field_for shape2, ...):   
+        # Here we setting out variables
+        self.field_for_shape1 = field_for_shape1
+    # Now you can overide the methods in the parent/super class
+    # supposed you had a rectangle as a shape , an area as a method you want to overide , this is how you will go about it
+
+    def area(self ,length ,width):
+        return length*width
+
+## Test Class
+# you going to have a setup method and teardown method
+
+# here is your area_test
+def area_test(self):
+    # results from the sub class -> your Area
+    result = self.rectangle.area()
+    # compare it with expected -> perform calc now
+    expected = self.rectangle.length * self.rectangle.width
+    ## if the obove statement is true then the test will pass
+
 ~~~
