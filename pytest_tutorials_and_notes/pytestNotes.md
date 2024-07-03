@@ -146,4 +146,34 @@ def mutliple_tests_for_func(results , expected_output):
     #assign your results an expected_output
     # then assert
     assert result == expected_output
+~~~   
+## Mocking
+> Testing tool used to isolate the system being tested by/with replacing the external dependencies with controlled implementation(mocks)   
+#
+i.e lets say you want to test an **API** , you dont test/implement the actual ***API* , you create a ***dummy API*** , because the data on the ***API* or database is subjected to change and it might take too long to fetch   
+#### Mocking a database   
+Need two file -> service.py and test_service.py   
+~~~python
+#####  service.py
+// declare you db
+db = {
+
+1: "name"
+2: "surname"
+
+}
+
+# get your db
+def get_user_by_id(user_id):
+    return database.get(user_id)
+
+#####  service_test.py
+//  need @mock.patch("path i.e location of your get_db_func") 
+@mock.patch("location_get_user_by_id")
+def test_get_user_by_id(mock_get_user_by_id):
+    mock_get_user_by_id.return_value = "name"
+    user_name = service.get_user_by_id(1)
+    assert user_name == "name"
+
+
 ~~~
