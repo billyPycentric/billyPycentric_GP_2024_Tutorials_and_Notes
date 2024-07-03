@@ -137,7 +137,7 @@ def area_test(self):
 ## Parametirizing   
 > Here you want to test same function but x number of times   
 how to use it :   
-~~~
+~~~python
 # need @pytest.mark.parametirize annotation
 # gonna nee the arguments , result also the expected_output
 
