@@ -165,5 +165,79 @@ else
 fi
 #fi means EOF -> end of file
 #Basically here what happens is that , check first for billy if TRUE show statement , then check for --help if TRUE statement AND id NOT(billy && --help) , You are an intruder
+~~~   
+## Case Statements   
+Is an advanced ***if ,elif ,else*** statement   
+Here is the demonstration :  
+~~~bash
+"#!/usr/bin/bash"
+case ${1,,} in 
+    abongile | billy | lord)
+        echo "Welcome , my Lord , How are you"
+        ;;
+    help | --help)
+        echo "Please talk to the administrator"
+        ;;
+    *)
+        echo "Police are on the way , You FRAUD"
+
+esac
+~~~   
+## Arrays | Lists   
+how to declare:   
+~~~bash
+
+LIST_OF_NAMES=(abo jane thato thabo funa mercy)
+
+# Then if you want to DISPLAY
+echo $LIST_OF_NAMES  -> dislay only the first one
+
+# for displaying the entire list
+echo ${LIST_OF_NAMES[@]}
+
+# for a certain index only
+echo ${LIS_OF_NAMES[n]} , where n is the desired index
+~~~      
+### Traverse through List using ***for loop***   
+1. Declare your list   
+~~~ bash
+MY_LIST_OF_TERMINALS=(powershell gitBash ubuntu cmd AzureCloud)
+~~~   
+2. Use a loop to traverse   
+~~~bash
+for item in ${MY_LIST_OF_TERMINALS[@]};do echo $item;done
+## expected output
+powershell
+gitBash
+ubuntu
+cmd
+AzureCloud
+~~~   
+3. Getting rid of spaces   
 ~~~
+for item in ${LIST_OF_TERMINALS[@]};do echo -n $item;done
+# -n gets rid of space/lines
+
+## expected output
+powershellgitBashubuntucmdAzureCloud
+~~~   
+4. So if you want to add **MORE CONDITIONS TO THE LOOP** this is the structure :   
+~~~bash
+for $ in ${LIST[@]};do something;do this;do that;done
+
+## at the end of the last statement add ;done
+~~~   
+## Functions
+Structure   
+~~~bash
+myfunc(){
+    # list of things to be done
+    #i.e display list of items
+    MY_LIST=(1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19)   
+    for item in ${MY_LIST[@]};do echo $item;done
+    echo "I am done my good sir"
+}
+myfunc
+~~~   
+
 
