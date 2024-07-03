@@ -176,4 +176,53 @@ def test_get_user_by_id(mock_get_user_by_id):
     assert user_name == "name"
 
 
+~~~   
+### Mocking an API   
+1. Fetch the ***API*** first   
+~~~
+pip install requests
+~~~   
+~~~python
+ /// service.py file
+import requests
+
+def get_API():
+    #save the response in a var
+    response = request.get("url")
+    # exceptions when it does fail
+    if response.status_code == 200:
+       return response.json()
+    
+    raise requests.HHTPError
+
+~~~
+2. Write a test using Mock
+~~~python
+import pytest , requests
+import "module" as components -> file
+ 
+// stimulate the requests.get using mock
+@mock.patch("requests.get")
+ // define func that is going to recieve the mock obj
+def test_get_API(mock_get):
+     # ctreate a mock obj
+     mock_response = mock.Mock()
+ 
+     # Assign status code
+     mock_response.status_code =200
+   
+     # Assign json.return_value dictionary to it
+     mock.response.json.return_value = {"Your possible API structure"}
+     
+    # Assign mock response to mock simulation of requests.get
+     mock.get.return_value = mock_response
+
+    # get the actual data from the API
+    data = module.get_API()
+   # then compare using assert with the return_value of mock_RESPONSE
+
+
+
+
+
 ~~~
