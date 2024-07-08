@@ -43,4 +43,16 @@ async def data():
 
 }
 ~~~
-
+## Types of HTTP-requests   
+1. PUT -> replaces the curr resource   
+2. DELETE -> deletes the curr resource   
+3. POST -> creates a resource   
+4. HEAD -> same as "GET" , with no response body   
+5. OPTIONS -> describe communnication options to target resource    
+## HTTP Request   
+already used app.get()   
+~~~python
+# using post 
+async def add_user(requestBody : dict = Body(...)):
+    return {"success" : f"new user '{requestbody["name"]}' is added"}
+~~~
