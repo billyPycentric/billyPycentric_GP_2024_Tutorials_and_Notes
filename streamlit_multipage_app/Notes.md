@@ -86,4 +86,24 @@ else:
 
 pg.run()
 
-~~~  
+~~~     
+## Working with Widgets   
+File structure   
+~~~
+your-repository/
+├── page_1.py
+├── page_2.py
+└── streamlit_app.py
+~~~   
+Code   
+~~~
+import streamlit as st
+
+pg = st.navigation([st.Page("page_1.py"), st.Page("page_2.py")])
+
+
+st.sidebar.selectbox("Group", ["A","B","C"], key="group")
+st.sidebar.slider("Size", 1, 5, key="size")
+
+pg.run()
+~~~
