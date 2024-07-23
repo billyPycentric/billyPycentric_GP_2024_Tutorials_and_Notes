@@ -1,0 +1,16 @@
+DEBUG:root:Add:8 + 2 = 10
+DEBUG:root:Sub : 8 - 2 = 6
+DEBUG:root:Sub : 8 * 2 = 16
+DEBUG:root:Sub : 8 / 2 = 4.0
+DEBUG:root:Add:6 + 3 = 9
+DEBUG:root:Sub : 6 - 3 = 3
+DEBUG:root:Sub : 6 * 3 = 18
+DEBUG:root:Sub : 6 / 3 = 2.0
+WARNING:root:Add:6 + 3 = 9
+WARNING:root:Sub : 6 - 3 = 3
+WARNING:root:Sub : 6 * 3 = 18
+WARNING:root:Sub : 6 / 3 = 2.0
+2024-07-12 16:08:42,331:<module>:WARNING:Add:6 + 3 = 9
+2024-07-12 16:08:42,331:<module>:WARNING:Sub : 6 - 3 = 3
+2024-07-12 16:08:42,331:<module>:WARNING:Sub : 6 * 3 = 18
+2024-07-12 16:08:42,331:<module>:WARNING:Sub : 6 / 3 = 2.0

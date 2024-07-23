@@ -163,3 +163,8 @@ with st.form(key='my_form'):
 st.write('Current Count = ', st.session_state.count)
 st.write('Last Updated = ', st.session_state.last_updated)
 ~~~   
+## RESPONSIVE   
+~~~python
+         
+
+~~~       

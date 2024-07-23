@@ -49,4 +49,4 @@ WARNING:root:Sub : 6 / 3 = 2.0
 ~~~   
 ## Docs for Logs format   
 Here is the link :   
-[Python Docs](https://docs.python.org/3/library/logging.html#logrecord-attributes)
+[Python Docs](https://docs.python.org/3/library/logging.html#logrecord-attributes)   
