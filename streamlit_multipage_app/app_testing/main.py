@@ -2,7 +2,7 @@
 import streamlit as st
 
 # Initialize st.session_state.beans
-st.session_state.beans = st.session_state.get("beans", 0)
+st.session_state.beans = st.session_state.get("beans", 3)
 
 st.title("Bean counter :paw_prints:")
 
