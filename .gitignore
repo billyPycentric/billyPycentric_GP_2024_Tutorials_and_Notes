@@ -18,3 +18,5 @@ streamlit_ex_model\venv
 streamlit_fund\venv
 streamlit_multipage_app\.venv
 Typer\venv
+
+#*.venv or add /
