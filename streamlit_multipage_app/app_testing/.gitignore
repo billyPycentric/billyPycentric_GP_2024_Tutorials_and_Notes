@@ -1,2 +1,11 @@
+<<<<<<< HEAD
 __pycache__
 .pytest_cache
+=======
+__inint__.py
+__pycache__
+.pytest_cache
+config.toml
+secrets.toml
+__pycache__
+>>>>>>> dd11abea7ce3a5cd4b5e6bbea264814f04a269a8
