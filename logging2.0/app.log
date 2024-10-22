@@ -1,0 +1,4 @@
+2024-08-13 11:40:56,746 - simpleExample - ERROR - Lets see if it only allows warnings
+2024-08-13 11:40:56,746 - simpleExample - DEBUG - This is a debug message
+2024-08-13 11:40:56,747 - simpleExample - INFO - This is an informational message
+2024-08-13 11:40:56,747 - simpleExample - WARNING - This is a warning message

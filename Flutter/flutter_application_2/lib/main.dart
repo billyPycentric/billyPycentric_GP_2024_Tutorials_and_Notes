@@ -1,0 +1,84 @@
+// import 'package:flutter/material.dart';
+
+// void main() {
+//   runApp(const Align(
+//     alignment: Alignment.center,
+//     child: Text(
+//       "Billy",
+//       textDirection: TextDirection.ltr,
+//     ),
+//   ));
+// }
+
+import 'package:flutter/material.dart';
+
+class MyAppBar extends StatelessWidget {
+  const MyAppBar({required this.title, super.key});
+
+  // Fields in a Widget subclass are always marked "final".
+
+  final Widget title;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      height: 56, // in logical pixels
+      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+      decoration: BoxDecoration(color: Colors.blue[500]),
+      // Row is a horizontal, linear layout.
+      child: Row(
+        children: [
+          const Icon(Icons.email),
+          // Expanded expands its child
+          // to fill the available space.
+          Expanded(
+            child: title,
+          ),
+          const Column(
+            children: [Icon(Icons.email), Icon(Icons.work)],
+          )
+        ],
+      ),
+    );
+  }
+}
+
+class MyScaffold extends StatelessWidget {
+  const MyScaffold({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    // Material is a conceptual piece
+    // of paper on which the UI appears.
+    return Material(
+      // Column is a vertical, linear layout.
+      child: Column(
+        children: [
+          MyAppBar(
+            title: Text(
+              'Billys Appl',
+              style: Theme.of(context) //
+                  .primaryTextTheme
+                  .titleLarge,
+            ),
+          ),
+          const Expanded(
+            child: Center(
+              child: Text('Hello, world!'),
+            ),
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+void main() {
+  runApp(
+    const MaterialApp(
+      home: SafeArea(
+        child: MyScaffold(),
+      ),
+    ),
+  );
+}
