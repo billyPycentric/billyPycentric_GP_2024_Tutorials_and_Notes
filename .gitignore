@@ -18,5 +18,10 @@ streamlit_ex_model\venv
 streamlit_fund\venv
 streamlit_multipage_app\.venv
 Typer\venv
+pytest/venv
+pytest/__pycache__/function.cpython-312.pyc
+pytest/__pycache__/shapes.cpython-312.pyc
+pytest/__pycache__/test.cpython-312-pytest-8.2.2.pyc
+pytest/__pycache__/test_cirlce.cpython-312-pytest-8.2.2.pyc
 
 #*.venv or add /
